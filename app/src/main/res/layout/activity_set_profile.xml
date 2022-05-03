@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SetProfile">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/getuserimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/android_font"
+        android:text="Save your Profile"
+        android:textColor="#C62828"
+        android:textSize="30sp"
+        android:textStyle="bold">
+
+    </TextView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_above="@+id/getusername"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:id="@+id/getuserimage"
+        app:cardCornerRadius="130dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/user"
+            android:id="@+id/getuserimageinimageview"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/getusername"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="200dp"
+        android:hint="Enter Your Name"
+        android:inputType="textCapWords">
+
+    </EditText>
+
+    <android.widget.Button
+        android:id="@+id/saveProfileBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/getusername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#B3195C"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:text="SAVE PROFILE"
+        android:textColor="@color/white">
+
+    </android.widget.Button>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/saveProfileBtn"
+        android:id="@+id/progressBarOfSetProfile"
+        android:visibility="invisible"
+        android:layout_marginTop="30dp">
+
+    </ProgressBar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="from"
+        android:textSize="18sp"
+        android:textColor="#A30E0D0D"
+        android:fontFamily="@font/ruda_bold"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/maintext"
+        android:layout_marginBottom="10dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/maintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/android_font"
+        android:text="My Chat"
+        android:textColor="#C62828"
+        android:textSize="25sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+</RelativeLayout>
